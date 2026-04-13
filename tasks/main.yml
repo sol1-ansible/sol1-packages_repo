@@ -12,9 +12,7 @@
         url: https://packages.sol1.net/packages.key
         dest: /usr/share/keyrings/sol1-archive-keyring.asc
         mode: "0644"
-      environment:
-        http_proxy: "{{ network_settings.proxies.http | default('') }}"
-        https_proxy: "{{ network_settings.proxies.https | default('') }}"
+      environment: "{{ proxy_env | default({}) }}"
 
     - name: Add packages.sol1.net repository
       ansible.builtin.copy:
