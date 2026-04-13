@@ -25,7 +25,7 @@
         content: |
           Types: deb
           URIs: https://packages.sol1.net
-          Suites: {{ sol1_packages_repo_debian_suite }}
+          Suites: {{ sol1_packages_repo_debian_release_codename }}
           Components: main
           Signed-By: /usr/share/keyrings/sol1-archive-keyring.asc
       register: sol1_sources

@@ -1,12 +1,2 @@
 ---
-galaxy_info:
-  role_name: sol1_packages_repo
-  author: sol1
-  description: Configures the Sol1 apt package repository
-  min_ansible_version: "2.10"
-  platforms:
-    - name: Debian
-      versions:
-        - all
-
 dependencies: []
